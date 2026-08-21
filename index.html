@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet">
+  <title>sajjad-resturant</title>
+</head>
+
+<body class="bg-black">
+
+
+  <main class="relative w-full min-h-screen bg-black text-white z-10">
+
+    <section class="relative w-full">
+
+      <header class="absolute top-0 left-0 w-full flex flex-row justify-between items-center px-10 py-5 z-10">
+
+        <!-- Logo -->
+        <div class="flex justify-start ">
+          <span class="text-[#fbbf24] px-7 font-[24px] uppercase tracking-[0.3rem] text-2xl font-serif">Sajjad</span>
+        </div>
+
+        <!-- Navbar -->
+        <div class="flex justify-end">
+          <p class="text-[#EBE7E099] tracking-[0.3rem] font-serif">Since Generations</p>
+        </div>
+
+      </header>
+
+      <div class="absolute w-full top-[27vh]  flex flex-col items-center z-20 pointer-events-none text-center px-4">
+        <div class="uppercase">
+          <p class="text-[#fbbf24] text-xs md:text-sm tracking-[0.3rem] font-serif">Choose your branch</p>
+        </div>
+
+        <div class="font-serif text-3xl md:text-5xl">
+          <p class="text-white">Where Will You Dine Tonight?</p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Front Page -->
+    <main class=" grid grid-cols-2">
+
+      <!-- Left Part -->
+      <section id="page-do-darya" class="relative h-screen flex flex-col justify-center items-center">
+
+
+        <!--Background Image  -->
+
+        <img src="\src\assets\do-darya\hero-restaurant.jpg" alt="BAckground-image"
+          class="absolute inset-0 w-full h-full object-cover z-0 brightness-30">
+
+        <div class="relative flex flex-col justify-center items-center gap-3 ">
+          <!-- Location -->
+          <div class="uppercase flex flex-row tracking-[0.3rem] gap-1.5">
+            <svg xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mt-1 text-[#fbbf24]">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span class="text-[#fbbf24] font-sans text-[14px] ">Karachi</span>
+          </div>
+
+          <!-- Name  -->
+          <div class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif">
+            <span class=" text-white">Do Darya</span>
+          </div>
+
+          <!--Paragraph  -->
+          <p class="text-[16px] italic font-subheading text-gray-400">Luxury Dinning by the Arabian Sea.</p>
+
+          <!-- Button of Enter -->
+          <div class=" border border-[#DFB03A] ">
+            <button class="uppercase hover:text-black text-[#DFB03A] hover:bg-[#DFB03A]  tracking-[0.1rem] md:px-5 md:py-2">Enter</button>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- Right Part -->
+
+      <section id="page-sukkur" class="relative h-screen flex flex-col justify-center items-center">
+
+
+        <!-- BAckground Image -->
+
+        <img src="\src\assets\Sukkur\sukkur-4.jpg" alt="Background-image"
+          class="absolute w-full h-full object-cover inset-0 z-0 brightness-30">
+
+
+        <div class="relative z-10 flex flex-col justify-center items-center gap-3">
+          <!-- Location -->
+          <div class="uppercase flex flex-row tracking-[0.3rem] gap-1.5">
+            <svg xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mt-1 text-[#fbbf24]">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span class="text-[#fbbf24] text-[14px]">Sindh</span>
+          </div>
+
+          <!-- Name -->
+          <div class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif">
+            <span class="text-[#EBE7E0]">Sukkur</span>
+          </div>
+
+          <!-- Paragraph -->
+          <p class="text-[16px] italic font-subheading text-gray-400">Heritage Flavors, Open-Sky Ambiance</p>
+
+          <!-- Button -->
+          <div class="border border-[#DFB03A] ">
+            <button class="uppercase hover:text-black text-[#DFB03A] hover:bg-[#DFB03A] tracking-[0.1rem] md:px-5 md:py-2">Enter</button>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  </main>
+
+
+
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
