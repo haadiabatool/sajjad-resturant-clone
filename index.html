@@ -29,7 +29,7 @@
 
       </header>
 
-      <div class="absolute w-full top-[27vh]  flex flex-col items-center z-20 pointer-events-none text-center px-4">
+      <div class="absolute w-full top-[25vh]  flex flex-col items-center z-20 pointer-events-none text-center px-4">
         <div class="uppercase">
           <p class="text-[#fbbf24] text-xs md:text-sm tracking-[0.3rem] font-serif">Choose your branch</p>
         </div>
@@ -46,13 +46,13 @@
     <main class=" grid grid-cols-2">
 
       <!-- Left Part -->
-      <section id="page-do-darya" class="relative h-screen flex flex-col justify-center items-center">
+      <section id="page-do-darya" class="group relative h-screen flex flex-col justify-center items-center overflow-hidden">
 
 
         <!--Background Image  -->
 
         <img src="\src\assets\do-darya\hero-restaurant.jpg" alt="BAckground-image"
-          class="absolute inset-0 w-full h-full object-cover z-0 brightness-30">
+          class="absolute inset-0 w-full h-full object-cover z-0 brightness-30 duration-1200 transition-transform ease-out group-hover:scale-110">
 
         <div class="relative flex flex-col justify-center items-center gap-3 ">
           <!-- Location -->
@@ -66,16 +66,18 @@
           </div>
 
           <!-- Name  -->
-          <div class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif">
-            <span class=" text-white">Do Darya</span>
+          <div class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif transition-transform duration-500 ease-in-out group-hover:-translate-y-2">
+            <span class=" text-white ">Do Darya</span>
           </div>
+          <div class="h-0.5 w-24 bg-[#fbbf24] duration-500 transition-all ease-in-out group-hover:w-40"></div>
+
 
           <!--Paragraph  -->
           <p class="text-[16px] italic font-subheading text-gray-400">Luxury Dinning by the Arabian Sea.</p>
 
           <!-- Button of Enter -->
           <div class=" border border-[#DFB03A] ">
-            <button class="uppercase hover:text-black text-[#DFB03A] hover:bg-[#DFB03A]  tracking-[0.1rem] md:px-5 md:py-2">Enter</button>
+            <button class="uppercase group-hover:text-black text-[#DFB03A] group-hover:bg-[#DFB03A]  tracking-[0.1rem] md:px-5 md:py-2">Enter</button>
           </div>
 
         </div>
@@ -84,13 +86,14 @@
 
       <!-- Right Part -->
 
-      <section id="page-sukkur" class="relative h-screen flex flex-col justify-center items-center">
+      <section id="page-sukkur" class="group relative h-screen flex flex-col justify-center items-center overflow-hidden">
 
 
         <!-- BAckground Image -->
+         
 
         <img src="\src\assets\Sukkur\sukkur-4.jpg" alt="Background-image"
-          class="absolute w-full h-full object-cover inset-0 z-0 brightness-30">
+          class="absolute w-full h-full object-cover inset-0 z-0 brightness-30 duration-1200 transition-transform ease-out group-hover:scale-110 ">
 
 
         <div class="relative z-10 flex flex-col justify-center items-center gap-3">
@@ -105,16 +108,18 @@
           </div>
 
           <!-- Name -->
-          <div class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif">
+          <div class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif transition-transform duration-500 ease-in-out group-hover:-translate-y-2">
             <span class="text-[#EBE7E0]">Sukkur</span>
           </div>
+          <div class="h-0.5 w-24 bg-[#fbbf24] duration-500 transition-all ease-in-out group-hover:w-40"></div>
+
 
           <!-- Paragraph -->
           <p class="text-[16px] italic font-subheading text-gray-400">Heritage Flavors, Open-Sky Ambiance</p>
 
           <!-- Button -->
           <div class="border border-[#DFB03A] ">
-            <button class="uppercase hover:text-black text-[#DFB03A] hover:bg-[#DFB03A] tracking-[0.1rem] md:px-5 md:py-2">Enter</button>
+            <button class="uppercase group-hover:text-black text-[#DFB03A] group-hover:bg-[#DFB03A] tracking-[0.1rem] md:px-5 md:py-2">Enter</button>
           </div>
 
         </div>
