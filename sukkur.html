@@ -11,91 +11,148 @@
 <body class="bg-black">
 
     <!-- NAvbar -->
-    <header class="relative w-full text-white">
-        <nav id="navbar"
-            class="fixed w-full top-0 left-0 z-50 px-10 py-6 flex flex-row gap-28 transition-colors duration-300 bg-transparent uppercase">
-            <!-- Brand name -->
-            <div class="flex justify-start ">
+    <header id="menu" class="relative w-full text-white">
+        <nav id="navbar" class="fixed w-full top-0 left-0 z-50 transition-colors duration-300 bg-transparent uppercase">
 
-                <span class="text-[#fbbf24] px-7 font-[24px] uppercase tracking-[0.3rem] text-2xl font-serif">
-                    Sajjad
-                </span>
+            <div class="px-6 sm:px-10 py-5 flex items-center justify-between gap-6">
 
-            </div>
+                <!-- Brand name -->
+                <div class="flex justify-start ">
 
-            <div class="flex flex-row gap-7 tracking-[0.1rem] text-[#EBE7E099]">
-                <!-- Menu -->
-                <div>
+                    <span
+                        class="text-[#fbbf24] px-7 font-[24px] uppercase tracking-[0.3rem] text-xl sm:text-2xl md:text-2xl lg:text-2xl font-serif">
+                        Sajjad
+                    </span>
 
-                    <span class="hover:text-[#fbbf24]">
+                </div>
+
+
+                <div id="desktopMenu" class="hidden lg:flex flex-row gap-7 tracking-[0.1rem] text-[#EBE7E099]">
+
+                    <!-- Menu -->
+
+                    <a href="#menu" class="hover:text-[#fbbf24]">
                         Menu
-                    </span>
+                    </a>
 
-                </div>
+                    <!-- About -->
 
-                <!-- About -->
-                <div>
-
-                    <span class="hover:text-[#fbbf24]">
+                    <a href="#about" class="hover:text-[#fbbf24]">
                         About
-                    </span>
+                    </a>
 
-                </div>
+                    <!-- Events -->
 
-                <!-- Events -->
-                <div>
-
-                    <span class="hover:text-[#fbbf24]">
+                    <a href="#events" class="hover:text-[#fbbf24]">
                         Events
-                    </span>
+                    </a>
 
-                </div>
+                    <!-- Gallery -->
 
-                <!-- Gallery -->
-                <div>
-
-                    <sapn class="hover:text-[#fbbf24]">
+                    <a href="#gallery" class="hover:text-[#fbbf24]">
                         Gallery
-                    </sapn>
+                    </a>
 
-                </div>
 
-                <!-- Reservation -->
-                <div>
+                    <!-- Reservation -->
 
-                    <span class="hover:text-[#fbbf24]">
+                    <a href="#reservation" class="hover:text-[#fbbf24]">
                         Reservation
-                    </span>
+                    </a>
 
-                </div>
+                    <!-- Contact -->
 
-                <!-- Contact -->
-                <div>
-
-                    <span class="hover:text-[#fbbf24]">
+                    <a href="#contact-us" class="hover:text-[#fbbf24]">
                         Contact
-                    </span>
+                    </a>
 
                 </div>
 
+
+                <!-- Category -->
+                <div
+                    class="hidden lg:flex  pointer-events-auto z-40 border border-[#EBE7E099] hover:border-[#fbbf24] p-1 tracking-[0.2rem] ">
+
+                    <select aria-label="Select Restaurant Branch"
+                        class="uppercase bg-transparent text-[#EBE7E099]  hover:text-[#fbbf24]">
+
+                        <option value="karachi" class="bg-black uppercase text-[#EBE7E099] hover:text-[#fbbf24]">
+                            Do Darya - Karachi
+                        </option>
+
+                        <option value="sukkur" class="uppercase bg-black text-[#EBE7E099]">
+                            Sukkur
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- HAMBURGER BUTTON -->
+                <button id="menuBtn" type="button" aria-label="Open menu"
+                    class=" lg:hidden text-white hover:text-[#fbbf24] transition">
+
+                    <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line x1="4" y1="6" x2="20" y2="6"></line>
+
+                        <line x1="4" y1="12" x2="20" y2="12"></line>
+
+                        <line x1="4" y1="18" x2="20" y2="18"></line>
+
+                    </svg>
+
+                </button>
             </div>
 
-            <!-- Category -->
-            <div
-                class="flex  pointer-events-auto z-40 border border-[#EBE7E099] hover:border-[#fbbf24] p-1 tracking-[0.2rem] ">
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden lg:hidden bg-black/95 border-t border-[#ffffff1a] px-6 py-6">
 
-                <select aria-label="Select Restaurant Branch"
-                    class="uppercase bg-black text-[#EBE7E099] hover:text-[#fbbf24]">
+                <div class="flex flex-col gap-5 tracking-[0.1rem] text-[#EBE7E099]">
 
-                    <option value="karachi" class="uppercase text-[#EBE7E099] hover:text-[#fbbf24]">
-                        Do Darya - Karachi
-                    </option>
+                    <a href="#menu" class="mobileLink hover:text-[#fbbf24] transition">
+                        Menu
+                    </a>
 
-                    <option value="sukkur" class="uppercase bg-black text-[#EBE7E099]">
-                        Sukkur
-                    </option>
+                    <a href="#about" class="mobileLink hover:text-[#fbbf24] transition">
+                        About
+                    </a>
 
-                </select>
+                    <a href="#events" class="mobileLink hover:text-[#fbbf24] transition">
+                        Events
+                    </a>
+
+                    <a href="#gallery" class="mobileLink hover:text-[#fbbf24] transition">
+                        Gallery
+                    </a>
+
+                    <a href="#reservation" class="mobileLink hover:text-[#fbbf24] transition">
+                        Reservation
+                    </a>
+
+                    <a href="#contact-us" class="mobileLink hover:text-[#fbbf24] transition">
+                        Contact
+                    </a>
+
+                    <div class="border border-[#EBE7E099] p-2 mt-2">
+                        <select aria-label="Select Restaurant Branch"
+                            class="w-full bg-transparent text-[#EBE7E099] uppercase outline-none">
+
+                            <option value="karachi" class="bg-black">
+                                Do Darya - Karachi
+                            </option>
+
+                            <option value="sukkur" class="bg-black">
+                                Sukkur
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </nav>
@@ -112,30 +169,38 @@
             </div>
 
             <div>
-                <p class="sm:text-4xl md:text-6xl lg:text-8xl text-[96px] font-serif">Sajjad Restaurant<br>Sukkur</p>
+                <p class="text-5xl md:text-6xl lg:text-8xl lg:text-[96px] font-serif">Sajjad Restaurant<br>Sukkur</p>
             </div>
             <div class="h-0.5 w-24 bg-[#fbbf24] duration-500 transition-all ease-in-out mt-4"></div>
 
 
             <div class="p-5">
 
-                <p class="text-[#EBE7E0B2] italic font-serif text-xl text-[20px]">Authentic Pakistani flavors, signature
-                    BBQ,
+                <p class="text-[#EBE7E0B2] italic font-serif text-xl md:text-2xl lg:text-2xl text-[17px] ">
+                    Authentic Pakistani flavors, signatureBBQ,
                     and warm family hospitality — now in the heart of Sindh.
                 </p>
 
             </div>
 
-            <div class="flex flex-row gap-10 m-7">
+            <div class="flex lg:flex-row flex-col md:flex-row gap-10 m-7 ">
 
-                <button class="bg-[#fbbf24] hover:bg-[#be9220] text-black px-13 py-4 uppercase tracking-[0.2rem]">
-                    Call to reserve
-                </button>
+                <a href="tel:03000132456">
+                    <button
+                        class="bg-[#fbbf24] hover:bg-[#be9220] text-black px-8 py-4 md:px-13 md:py-4 lg:px-13 lg:py-4 uppercase tracking-[0.1rem] lg:tracking-[0.2rem]">
+                        Call to reserve
+                    </button>
+                </a>
 
-                <button
-                    class="border hover:border-[#fbbf24] hover:text-[#fbbf24] px-10 py-4  uppercase tracking-[0.1rem]">
-                    View gallery
-                </button>
+
+                <a href="#gallery">
+
+                    <button
+                        class="border hover:border-[#fbbf24] hover:text-[#fbbf24] px-8 py-4 md:px-13 md:py-4 lg:px-13 lg:py-4 tracking-[0.1rem] uppercase lg:tracking-[0.1rem]">
+                        View gallery
+                    </button>
+
+                </a>
 
             </div>
 
@@ -144,27 +209,28 @@
     </main>
 
     <!-- Experience -->
-    <section class="bg-[#1F1F1F] flex justify-center items-center text-center p-20 text-white">
+    <section id="experience"
+        class="bg-[#1F1F1F] flex justify-center items-center text-center px-20 py-6 md:px-32 md:py-24 lg:px-32 lg:py-24  text-white">
 
         <div>
 
-            <p class="uppercase text-[#fbbf24] tracking-[0.4rem] font-sans">
+            <p class="uppercase text-[#fbbf24] tracking-[0.4rem] mb-4 font-sans">
                 A Sindhi Tradition
             </p>
 
-            <p class="text-4xl md:text-5xl m-5 text-white font-serif">
+            <p class="text-4xl md:text-5xl mb-4 text-white font-serif">
                 The Sajjad Experience in Sukkur
             </p>
 
 
-            <p class="text-[#EBE7E099] text-lg md:text-xl italic mt-8 font-serif ml-15 mr-15 tracking-tighter ">
+            <p class="text-[#EBE7E099] text-lg md:text-xl italic mb-4 font-serif tracking-tighter ">
                 Carrying forward the legacy of Sajjad Restaurant, our Sukkur branch brings the same
                 celebrated cuisine, warm hospitality, and unforgettable ambiance to the heart of Sindh.
             </p>
 
             <br>
 
-            <p class="text-[#EBE7E099] text-lg md:text-xl mt-8 ml-15 mr-15 tracking-tight">
+            <p class="text-[#EBE7E099] text-lg md:text-xl mb-4 tracking-tight">
                 From sizzling BBQ platters fired over open coals to traditional Pakistani favourites, every dish is
                 crafted with the same care that has made Sajjad a household name.
                 Our beautifully designed outdoor courtyards and family-friendly dining halls make every visit a
@@ -177,21 +243,22 @@
     </section>
 
     <!-- Gallery -->
-    <section class="bg-black p-10 ">
+    <section id="gallery" class="bg-black p-10 ">
         <div class="text-center mt-5">
 
-            <p class="uppercase text-[#fbbf24] tracking-[0.3rem] font-sans ml-15 mb-5">
+            <p class="uppercase text-[#fbbf24] tracking-[0.3rem] font-sans mb-5">
                 Visual Journey
             </p>
 
             <p class="text-4xl md:text-5xl text-white font-serif">
-                sukkur Gallery
+                Sukkur Gallery
             </p>
 
         </div>
 
         <!-- Images -->
-        <div class="grid grid-cols-3 grid-rows-4 gap-5 m-10 mt-10">
+        <div
+            class="grid sm:grid-cols-1 sm:grid-rows-4 md:grid-cols-2 md:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 gap-5 m-10 mt-10">
 
             <div class="aspect-4/3 overflow-hidden">
                 <img src="\src\assets\Sukkur\sukkur-4.jpg" alt="front-view"
@@ -227,8 +294,8 @@
     </section>
 
     <!-- Contack us -->
-    <section bg-black p-10>
-        <div class="flex flex-col justify-center items-center text-center m-20">
+    <section id="contact-us" class="bg-black p-5">
+        <div class="flex flex-col  justify-center items-center text-center mb-10">
             <p class="uppercase text-[#fbbf24] tracking-[0.3rem] font-sans  mb-5">
                 Visit Us
             </p>
@@ -240,9 +307,7 @@
 
         <!-- MAps -->
 
-
-        <!-- 4 -->
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-1  md:grid-cols-2 ">
             <!-- Name -->
             <div class="flex flex-col ml-15">
                 <p class="text-[#fbbf24]">
@@ -251,22 +316,55 @@
 
 
 
-                <div class="flex flex-row">
-                    <svg xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 mt-1 text-[#fbbf24]">
-                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
-                        <circle cx="12" cy="10" r="3" />
-                    </svg>
+                <div class="flex flex-col">
+                    <div class="flex flex-row gap-2">
+                        <svg xmlns="http://w3.org" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-4 h-4 mt-1 text-[#fbbf24]">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
 
-                    <p class="text-[#EBE7E099]">
-                        Sukkur, Sindh, Pakistan
-                    </p>
+                        <p class="text-[#EBE7E099]">
+                            Near City School Campus,Sindh, Pakistan
+                        </p>
+
+                    </div>
+
+                    <div class="flex flex-row gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-1 text-[#fbbf24]" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-phone w-5 h-5 text-accent mt-1 shrink-0">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <a href="03300228111" class="text-[#EBE7E099]">
+                            033002228111
+                        </a>
+                    </div>
+
+                    <div class="flex flex-row gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mt-1 text-[#fbbf24]" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-clock w-5 h-5 text-accent mt-1 shrink-0"
+                            class="w-4 h-4 mt-1 text-[#fbbf24]">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <p class="text-[#EBE7E099]">
+                            Open daily 12:00 PM – 1:30 AM
+                        </p>
+                    </div>
+
                 </div>
 
             </div>
 
             <!-- Location -->
-            <div class="mb-5">
+            <div class="m-5">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.090899505646!2d68.80839807461017!3d27.74534217616077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3935d5d4abba0c43%3A0x4090d6df84dbd02d!2sSajjad%20Restaurant%20Sukkur!5e0!3m2!1sen!2sus!4v1787320507912!5m2!1sen!2sus"
                     width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
@@ -279,27 +377,27 @@
     </section>
 
     <!-- Footer -->
-    <footer class="grid grid-cols-3 bg-[#1F1F1F] p-10">
+    <footer class="grid grid-cols-1 md:grid-cols-3 gap-12 bg-[#1F1F1F] px-16 py-6">
 
-        <div class="flex flex-col m-10">
-            <span class="text-[#fbbf24] px-7 font-[24px] uppercase tracking-[0.3rem] text-2xl font-serif">
+        <div class="flex flex-col">
+            <span class="text-[#fbbf24]  font-[24px] uppercase tracking-[0.3rem] text-2xl font-serif">
                 Sajjad
             </span>
 
-            <p class=" ml-4 text-xs italic text-[#EBE7E099]">
+            <p class=" text-xs italic text-[#EBE7E099]">
                 Luxury Dining by the Sea
             </p>
         </div>
 
-        <div class="text-[#EBE7E099] flex flex-col m-10 ">
-            <p class="text-white font-bold font-serif">Quick Links</p>
-            <span>Menu</span>
-            <span>Reservation</span>
-            <span>Events</span>
-            <span>Contact</span>
+        <div class="text-[#EBE7E099] flex flex-col gap-2 ">
+            <p class="text-white font-bold font-serif mb-4">Quick Links</p>
+            <a href="#menu">Menu</a>
+            <a href="#reservation">Reservation</a>
+            <a href="events">Events</a>
+            <a href="contact-us">Contact</a>
         </div>
 
-        <div class="flex flex-col m-10 text-[#EBE7E099] gap-3">
+        <div class="flex flex-col text-[#EBE7E099] gap-3">
             <p class="text-white font-serif font-bold">Follow Us</p>
             <div class="flex flex-row gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -322,6 +420,8 @@
             </div>
         </div>
     </footer>
+
+    <script type="module" src="/src/sukkur.js"></script>
 
 </body>
 
