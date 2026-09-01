@@ -5,7 +5,9 @@ const pagedodarya=
     document.getElementById('page-do-darya');
 
 pagedodarya.addEventListener("click",()=>{
+
     window.location.href="do-darya.html";
+
 });
 
 
@@ -14,14 +16,10 @@ const pagesukkur=
     document.getElementById('page-sukkur');
 
 pagesukkur.addEventListener("click",()=>{
+
     window.location.href="sukkur.html";
+
 });
-
-
-
-
-
-
 
 
 };
