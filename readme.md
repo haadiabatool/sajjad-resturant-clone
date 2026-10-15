@@ -35,8 +35,8 @@ Desktop screens
 Large displays
 
 ## ScreenShots
-![Website Preview](.sajjad-resturant-image-1.jpeg)
-![Website Preview](.sajjad-resturant-image-2.jpeg)
+![Website Preview](./sajjad-resturant-image-1.jpeg)
+![Website Preview](./sajjad-resturant-image-2.jpeg)
 ![Website Preview](.sajjad-resturant-image-3.jpeg)
 ![Website Preview](.sajjad-resturant-image-4.jpeg)
 ![Website Preview](.sajjad-resturant-image-5.jpeg)
